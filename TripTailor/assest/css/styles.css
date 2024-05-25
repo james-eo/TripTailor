@@ -19,8 +19,7 @@
 }
 .search-bg{
     background-color:#4583BD !important ;
-    padding: 5px !important;
-    
+    padding: 3px !important;
 }
 /* .hero-section{
     padding: 3px  20px;
@@ -104,4 +103,7 @@ word-wrap: break-word"
 .bg-primary{
     background:rgba(68.56, 131.25, 189.13, 0.10)
     
+}
+.red-space-para p{
+    margin-bottom: 0.05rem;
 }
