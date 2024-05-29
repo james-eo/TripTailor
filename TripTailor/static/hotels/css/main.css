@@ -1,0 +1,137 @@
+/* General Styles */
+body {
+    background: #fafafa;
+    color: #333333;
+    margin-top: 5rem;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    color: #444444;
+  }
+  
+  ul {
+    margin: 0;
+  }
+  
+  /* Buttons */
+  .btn-primary {
+    background-color: #4583BD;
+  }
+  
+  .btn-primary-outline {
+    border: #4583BD solid 2px;
+    color: #4583BD;
+    margin: 0 15px;
+  }
+  
+  .btn-primary-outline:hover {
+    background-color: #4583BD;
+    color: #ffffff;
+  }
+  
+  /* Text Styles */
+  .brand-text {
+    color: #4583BD;
+    font-size: 40px;
+    font-weight: 600;
+    font-family: "Source Sans Pro";
+  }
+  
+  .text-color {
+    color: #4583BD;
+  }
+  
+  .whit-text {
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: 400;
+    font-family: "Source Sans Pro";
+  }
+  
+  /* Hero Section */
+  .hero-section {
+    padding: 3px 20px;
+  }
+  
+  .hero-section .row .Group .ExploreTriptailorForTravelers {
+    width: 604.98px;
+    left: 4px;
+    top: 0px;
+    position: absolute;
+    color: #8D8D8D;
+    font-size: 36px;
+    font-family: Source Sans Pro;
+    font-weight: 600;
+    word-wrap: break-word;
+  }
+  
+  /* Carousel */
+  .container .row .img-side img {
+    float: left;
+    width: 33.3%;
+    height: 100%;
+    background: linear-gradient(0deg, #D9D9D9 0%, #D9D9D9 100%);
+  }
+  
+  .carousel .container .row .slide .carousel-inner .carousel-item img {
+    float: left;
+    width: 33.3%;
+    padding: 0 5px;
+  }
+  
+  /* Content Sections */
+  .content-section {
+    background: #ffffff;
+    padding: 10px 20px;
+    border: 1px solid #dddddd;
+    border-radius: 3px;
+    margin-bottom: 20px;
+  }
+  
+  .content-m-1 {
+    margin: 450px 0 0 100px;
+    font-size: 20px;
+    color: #ffffff;
+  }
+  
+  .content-m-2 {
+    margin: 450px 0 0 500px;
+    font-size: 18px;
+    color: #ffffff;
+  }
+  
+  .content-m-3 {
+    margin: 450px 0 0 880px;
+    font-size: 18px;
+    color: #ffffff;
+  }
+  
+  .content-m-center-1 {
+    margin: 450px 0 0 150px;
+    font-size: 25px;
+    color: #ffffff;
+  }
+  
+  .content-m-center-2 {
+    margin: 450px 0 0 520px;
+    font-size: 25px;
+    color: #ffffff;
+  }
+  
+  .content-m-center-3 {
+    margin: 450px 0 0 900px;
+    font-size: 25px;
+    color: #ffffff;
+  }
+  
+  /* Other Styles */
+  .bg-primary {
+    background: rgba(68.56, 131.25, 189.13, 0.1);
+  }
+  
+  .red-space-para p {
+    margin-bottom: 0.05rem;
+  }
+  
+  /* Bootstrap Overrides (Consider using Bootstrap utility classes instead)
+  

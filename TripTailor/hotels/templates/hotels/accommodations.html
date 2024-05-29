@@ -1,0 +1,21 @@
+{% extends 'hotels/base.html' %}
+{% block content %}
+    {% for hotel in hotel_list %}
+        <article class="media content-section">
+            <div class="media-body">
+                <div class="article-metadata">
+                    <h2><a class="article-title" href="#">{{ hotel.name }}</a></h2>
+                    <p><small class="text-muted">{{ hotel.location }}</small></p>
+                </div>
+                <div class="" style="text-align: justify;">
+                    <img class="img-fluid img-rouded" src="{{ hotel.image }}" alt="{{ hotel.name }} image">
+                    <p class="mb-0"><strong>Rating:</strong> {{ hotel.rating }} </p>
+                    <p class="mb-0"><strong>Price:</strong> {{ hotel.currency }} {{ hotel.price }}</p>
+                    <p class="mb-0"><strong>Description:</strong> {{ hotel.description }}</p>
+                    <p class="mb-0"><strong>Amenities:</strong>{{ hotel.amenities }}</p>
+                </div>
+            </div>
+        </article>
+        <hr>
+    {% endfor %}
+{% endblock content %}
