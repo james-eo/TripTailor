@@ -5,7 +5,8 @@ urlpatterns = [
     path('', views.home, name='hotels-home'),
     path('about/', views.about, name='hotels-about'),
     path('accommodations/', views.accommodations, name='accommodations'),
-    #path('search/', views.search_results, name='search_results'),
-    #path('hotel/<int:hotel_id>/', views.hotel_details, name='hotel_details'),
+    path('get_regions/<int:country_id>/', views.get_regions, name='get_regions'),
+    path('get_cities/<int:region_id>/', views.get_cities, name='get_cities'),
+    
 ]
     

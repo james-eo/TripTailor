@@ -9,14 +9,13 @@
                     <div class="media-body">
                         <div class="article-metadata">
                             <h2><a class="article-title" href="#">{{ hotel.name }}</a></h2>
-                            <p><small class="text-muted">{{ hotel.location }}</small></p>
                         </div>
                         <div class="" style="text-align: justify;">
-                            <img class="img-fluid img-rouded" src="{{ hotel.image }}" alt="{{ hotel.name }} image">
+                            <img class="img-fluid img-rouded" src="{{ hotel.image_url }}" alt="{{ hotel.name }} image">
                             <p class="mb-0"><strong>Rating:</strong> {{ hotel.rating }} </p>
                             <p class="mb-0"><strong>Price:</strong> {{ hotel.currency }} {{ hotel.price }}</p>
-                            <p class="mb-0"><strong>Description:</strong> {{ hotel.description }}</p>
-                            <p class="mb-0"><strong>Amenities:</strong>{{ hotel.amenities }}</p>
+                            <p class="mb-0"><strong>Amenities:</strong> {{ hotel.amenities }}</p>
+                            <p><small class="text-muted"><strong>Location:</strong> {{ hotel.city.name }}, {{ hotel.region.name }}, {{ hotel.country.name }}</small></p>
                         </div>
                     </div>
                 </article>
@@ -25,4 +24,4 @@
         {% endfor %}
     </div>
 </div>
-{% endblock content %}
+{% endblock %}
