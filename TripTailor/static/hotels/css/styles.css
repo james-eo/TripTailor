@@ -4,13 +4,13 @@
     padding: 0;
 }
 
-
 .navbar-nav .nav-link:hover {
-    color: blue; /* Change the color on hover */
-    text-decoration: underline; /* Underline the link on hover */
-    transition: color 0.3s ease-in-out, text-decoration 0.3s ease-in-out; /* Smooth transition */
+    color: #0056b3;
+    text-decoration: underline;
+    transition: color 0.3s ease-in-out, text-decoration 0.3s ease-in-out;
+    border-radius: 5px;
+    font-weight: bold;
 }
-
 
 .btn-primary{
     background-color:#4583BD !important ;
