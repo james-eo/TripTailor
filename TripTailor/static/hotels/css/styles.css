@@ -12,6 +12,46 @@
     font-weight: bold;
 }
 
+
+
+.card {
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card-title a {
+    color: #0056b3;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.card-title a:hover {
+    color: red;
+}
+
+
+.foot {
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.foot:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.footer p {
+    transition: color 0.3s ease;
+}
+
+.footer p:hover {
+    color: red; /* Change to your desired hover color */
+}
+
+
 .btn-primary{
     background-color:#4583BD !important ;
 }
