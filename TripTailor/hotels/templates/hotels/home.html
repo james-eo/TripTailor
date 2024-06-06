@@ -68,22 +68,65 @@
                 <h1 class="brand-text">Trending Destinations</h1>
                 <h4 style="font-size: 18px;">Most popular choices for travelers</h4>
             </div>
-            <div id="carouselExampleFade1" class="carousel slide carousel-fade col-sm-12">
+            <div id="carouselExampleFade" class="carousel slide carousel-fade col-sm-12">
                 <div class="carousel-inner">
-                    {% for image in carousel1_images %}
-                        <div class="carousel-item {% if forloop.first %}active{% endif %}">
-                            <img src="{% static image %}" height="550" class="d-block rounded-5" alt="{{ image|slice:'0:-4' }}">
-                            <div class="position-absolute content-m-center-{{ forloop.counter }}">
-                                <p>{{ image|slice:'0:-4'|title }}</p>
+                    <div class="carousel-item active">
+                        <div class="col-md-12">
+                            <img src="https://imgur.com/8kll7s7.jpg" class="img-fluid rounded-5" alt="Hotel in Paris">
+                            <div class="position-absolute content-m-center-1">
                             </div>
                         </div>
-                    {% endfor %}
+                        <div class="col-md-12">
+                            <img src="https://imgur.com/hX65JGC.jpg" class="img-fluid rounded-5" alt="Hotel in London">
+                            <div class="position-absolute content-m-center-2">
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <img src="https://imgur.com/NSVvgwr.jpg" class="img-fluid rounded-5" alt="Hotel in Lagos">
+                            <div class="position-absolute content-m-center-3">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div>
+                            <img src="https://imgur.com/IpTmuzH.jpg" class="img-fluid rounded-5" alt="Hotel in Qatar">
+                            <div class="position-absolute content-m-center-1">
+                            </div>
+                        </div>
+                        <div>
+                            <img src="https://imgur.com/CgFL6Bm.jpg" class="img-fluid rounded-5" alt="Hotel in Enugu">
+                            <div class="position-absolute content-m-center-2">
+                            </div>
+                        </div>
+                        <div>
+                            <img src="https://imgur.com/Dei24Sn.jpg" class="img-fluid rounded-5" alt="Hotel in Toronto">
+                            <div class="position-absolute content-m-center-3">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div>
+                            <img src="https://imgur.com/CBKxK7s.jpg" class="img-fluid rounded-5" alt="Hotel in L.A">
+                            <div class="position-absolute content-m-center-1">
+                            </div>
+                        </div>
+                        <div>
+                            <img src="https://imgur.com/LGzZfg2.jpg" class="img-fluid rounded-5" alt="Hotel in Ghana">
+                            <div class="position-absolute content-m-center-2">
+                            </div>
+                        </div>
+                        <div>
+                            <img src="https://imgur.com/e1qZ2EX.jpg" class="img-fluid rounded-5" alt="Hotel in Edo">
+                            <div class="position-absolute content-m-center-3">
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade1" data-bs-slide="prev">
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
                     <span class="carousel-control-prev-icon btn-primary rounded-pill" aria-hidden="true"></span>
                     <span class="visually-hidden">Previous</span>
                 </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade1" data-bs-slide="next">
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
                     <span class="carousel-control-next-icon btn-primary rounded-pill" aria-hidden="true"></span>
                     <span class="visually-hidden">Next</span>
                 </button>
@@ -91,6 +134,7 @@
         </div>
     </div>
 </section>
+
 
 <!-- Experience with TripTailor Carousel -->
 <section class="carousel mt-5 text-black-50">

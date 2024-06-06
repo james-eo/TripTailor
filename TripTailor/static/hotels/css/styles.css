@@ -33,7 +33,6 @@
     color: red;
 }
 
-
 .foot {
     transition: transform 0.2s, box-shadow 0.2s;
 }
@@ -50,6 +49,23 @@
 .footer p:hover {
     color: red; /* Change to your desired hover color */
 }
+
+
+
+.carousel-inner {
+    display: flex;
+    align-items: center;
+  }
+  
+  .carousel-item {
+    flex-basis: 100%;
+    justify-content: center;
+  }
+  
+  .carousel-item img {
+    height: 300px;
+    width: 100%;
+  }
 
 
 .btn-primary{
