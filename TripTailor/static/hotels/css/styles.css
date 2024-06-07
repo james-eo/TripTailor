@@ -12,6 +12,15 @@
     font-weight: bold;
 }
 
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.card-body .btn {
+    margin-top: auto;
+}
 
 
 .card {
@@ -50,6 +59,27 @@
     color: red; /* Change to your desired hover color */
 }
 
+.call-to-action .cta-link:hover {
+    background-color: #007bff; /* Background color on hover */
+    color: yellow; /* Text color on hover */
+    text-decoration: none; /* Ensure no underline on hover */
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.about-us, .what-we-do, .mission, .team, .future {
+    margin-bottom: 2rem;
+}
+
+.blockquote {
+    border-left: 5px solid #007bff;
+    padding-left: 15px;
+    margin: 1rem 0;
+    font-style: italic;
+    color: #555;
+}
 
 
 .carousel-inner {

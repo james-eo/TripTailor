@@ -2,15 +2,22 @@
 {% block content %}
 <body>
   <header>
-    <h1>TripTailor: Your Personalized Hotel Matchmaker</h1>
+    <h1 class="bg-primary text-center text-white py-5">
+      TripTailor: Your Personalized Hotel Matchmaker</h1>
   </header>
 
-  <main>
-    <section class="about-us">
+  <main class="container my-5">
+    <section class="about-us mb-5">
       <h2>About TripTailor</h2>
-      <p>TripTailor is a web application designed to revolutionize the way you search for hotels. We understand that finding the perfect hotel can be a frustrating and time-consuming process. Sifting through endless options, comparing features, and dealing with generic recommendations can leave you feeling overwhelmed.</p>
+      <blockquote class="blockquote">
+        TripTailor is a web application designed to revolutionize the way you search for hotels. 
+        We understand that finding the perfect hotel can be a frustrating and time-consuming process. 
+        Sifting through endless options, comparing features, and dealing with generic recommendations can leave you feeling overwhelmed.
+      </blockquote>
+    </section>
+    <section class="what-we-do mb-5">
       <h2>What We Do</h2>
-      <ul>
+      <ul class="list-unstyled">
         <li><strong>Interface:</strong> Our intuitive platform makes it easy to input your travel details, including location, budget, desired amenities, and travel style.</li>
         <li><strong>Smart Recommendation Engine:</strong> We leverage powerful algorithms and user data to curate hotel options that perfectly match your criteria.</li>
         <li><strong>Advanced Filtering:</strong> Refine your search further with our comprehensive filtering options, allowing you to prioritize specific features that matter most to you.</li>
@@ -18,31 +25,35 @@
       </ul>
     </section>
 
-    <section class="mission">
+    <section class="mission mb-5">
       <h2>Our Mission</h2>
       <p>Our mission is to empower travelers with the tools and information they need to make informed hotel decisions. We believe that every trip deserves a perfectly suited stay, and TripTailor is here to help you find it.</p>
     </section>
 
-    <section class="team">
+    <section class="team mb-5">
       <h2>The Team Behind TripTailor</h2>
       <p>TripTailor is brought to you by a passionate team of developers and data scientists dedicated to creating a seamless and personalized travel experience.</p>
-      <ul>
-        <li>Moses Eze: Front-End Engineer (UX/UI Design & Development)</li>
-        <li>James Okonkwo: Project Lead & Back-End Engineer</li>
-        <li>Stephen Odiase: Front-End Engineer </li>
+      <ul class="list-unstyled">
+          <li><strong>Moses Eze:</strong> Front-End Engineer (UX/UI Design & Development)</li>
+          <li><strong>James Okonkwo:</strong> Project Lead & Back-End Engineer</li>
+          <li><strong>Stephen Odiase:</strong> Front-End Engineer</li>
       </ul>
     </section>
 
-    <section class="future">
+    <section class="future mb-5">
       <h2>Looking Ahead</h2>
-      <p>We are constantly innovating and developing new features to enhance your travel planning experience.  In the future, TripTailor may integrate with booking platforms for a more streamlined process, and leverage machine learning to personalize recommendations even further based on your travel history and preferences.</p>
-    </section>
+      <blockquote class="blockquote">
+          We are constantly innovating and developing new features to enhance your travel planning experience. 
+          In the future, TripTailor may integrate with booking platforms for a more streamlined process, 
+          and leverage machine learning to personalize recommendations even further based on your travel history and preferences.
+      </blockquote>
+  </section>
 
     <section class="call-to-action">
       <h2>Join the Journey</h2>
       <p>We invite you to explore TripTailor and discover the power of personalized hotel recommendations. Let us transform your next trip into an unforgettable experience!</p>
-      <a href="{% url 'accommodations' %}">Explore TripTailor</a> 
-    </section>
+      <a class="btn btn-primary" href="{% url 'accommodations' %}">Explore TripTailor</a>
+  </section>
   </main>
 </body>
 {% endblock content %}
