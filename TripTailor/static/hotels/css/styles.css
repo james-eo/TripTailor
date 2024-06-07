@@ -4,6 +4,99 @@
     padding: 0;
 }
 
+.navbar-nav .nav-link:hover {
+    color: #0056b3;
+    text-decoration: underline;
+    transition: color 0.3s ease-in-out, text-decoration 0.3s ease-in-out;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.card-body .btn {
+    margin-top: auto;
+}
+
+
+.card {
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card-title a {
+    color: #0056b3;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.card-title a:hover {
+    color: red;
+}
+
+.foot {
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.foot:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.footer p {
+    transition: color 0.3s ease;
+}
+
+.footer p:hover {
+    color: red; /* Change to your desired hover color */
+}
+
+.call-to-action .cta-link:hover {
+    background-color: #007bff; /* Background color on hover */
+    color: yellow; /* Text color on hover */
+    text-decoration: none; /* Ensure no underline on hover */
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.about-us, .what-we-do, .mission, .team, .future {
+    margin-bottom: 2rem;
+}
+
+.blockquote {
+    border-left: 5px solid #007bff;
+    padding-left: 15px;
+    margin: 1rem 0;
+    font-style: italic;
+    color: #555;
+}
+
+
+.carousel-inner {
+    display: flex;
+    align-items: center;
+  }
+  
+  .carousel-item {
+    flex-basis: 100%;
+    justify-content: center;
+  }
+  
+  .carousel-item img {
+    height: 300px;
+    width: 100%;
+  }
+
 
 .btn-primary{
     background-color:#4583BD !important ;

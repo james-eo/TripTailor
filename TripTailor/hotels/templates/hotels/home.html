@@ -2,30 +2,30 @@
 {% load static %}
 {% block title %}Home - TripTailor{% endblock %}
 {% block content %}
-<!-- Hero Section -->
-<section class="hero-search container mt-5 w-75 p-3 text-black-50">
+<!-- Hero Section hero-search container mt-5 w-75 p-3 text-black-50 -->
+<section class="hero-search container mt-5 p-3 w-auto text-black-50">
     <div class="container-fluid">
         <form class="row row-cols-md-auto d-flex justify-content-center g-4 search-bg align-items-center rounded-4" id="searchForm" method="get" action="{% url 'accommodations' %}">
-            <div class="col-auto mb-2">
-                <select class="form-select w-auto rounded-4 p-3" id="country" name="country">
+            <div class="col-md-3 mb-2">
+                <select class="container-fluid w-100 rounded-4 p-3" id="country" name="country">
                     <option value="">Country</option>
                     {% for country in countries %}
                         <option value="{{ country.id }}">{{ country.name }}</option>
                     {% endfor %}
                 </select>
             </div>
-            <div class="col-auto mb-2">
-                <select class="form-select w-auto rounded-4 p-3" id="region" name="region">
+            <div class="col-md-3 mb-2">
+                <select class="container-fluid w-100 rounded-4 p-3" id="region" name="region">
                     <option value="">Region</option>
                 </select>
             </div>
-            <div class="col-auto mb-2">
-                <select class="form-select w-auto rounded-4 p-3" id="city" name="city">
+            <div class="col-md-3 mb-2">
+                <select class="container-fluid w-100 rounded-4 p-3" id="city" name="city">
                     <option value="">City</option>
                 </select>
             </div>
-            <div class="col-auto">
-                <button type="submit" class="btn btn-outline-primary w-auto p-3 rounded-4 border-0 white-text">Search</button>
+            <div class="col-md-3 mb-2">
+                <button type="submit" class="btn btn-outline-primary w-100 p-3 rounded-4 border-0 white-text">Search</button>
             </div>
         </form>
     </div>
@@ -52,9 +52,9 @@
                 </div>
             </div>
             <div class="col-md-6 img-side">
-                <img src="https://imgur.com/pvJPWY0" class="img-fluid rounded-5" alt="Hotel in Paris">
-                <img src="https://imgur.com/pvJPWY0" class="img-fluid rounded-5" alt="Hotel in London">
-                <img src="https://imgur.com/pvJPWY0" class="img-fluid rounded-5" alt="Hotel in Lagos">
+                <img src="https://imgur.com/gaA16R7.jpg" class="img-fluid rounded-3" alt="Hotel in Paris">
+                <img src="https://imgur.com/mYvCEb5.jpg" class="img-fluid rounded-3" alt="Hotel in London">
+                <img src="https://imgur.com/hulTbsF.jpg" class="img-fluid rounded-3" alt="Hotel in Lagos">
             </div>
         </div>
     </div>
@@ -68,22 +68,65 @@
                 <h1 class="brand-text">Trending Destinations</h1>
                 <h4 style="font-size: 18px;">Most popular choices for travelers</h4>
             </div>
-            <div id="carouselExampleFade1" class="carousel slide carousel-fade col-sm-12">
+            <div id="carouselExampleFade" class="carousel slide carousel-fade col-sm-12">
                 <div class="carousel-inner">
-                    {% for image in carousel1_images %}
-                        <div class="carousel-item {% if forloop.first %}active{% endif %}">
-                            <img src="{% static image %}" height="550" class="d-block rounded-5" alt="{{ image|slice:'0:-4' }}">
-                            <div class="position-absolute content-m-center-{{ forloop.counter }}">
-                                <p>{{ image|slice:'0:-4'|title }}</p>
+                    <div class="carousel-item active">
+                        <div class="col-md-12">
+                            <img src="https://imgur.com/8kll7s7.jpg" class="img-fluid rounded-5" alt="...">
+                            <div class="position-absolute content-m-center-1">
                             </div>
                         </div>
-                    {% endfor %}
+                        <div class="col-md-12">
+                            <img src="https://imgur.com/hX65JGC.jpg" class="img-fluid rounded-5" alt="...">
+                            <div class="position-absolute content-m-center-2">
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <img src="https://imgur.com/NSVvgwr.jpg" class="img-fluid rounded-5" alt="...">
+                            <div class="position-absolute content-m-center-3">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div>
+                            <img src="https://imgur.com/IpTmuzH.jpg" class="img-fluid rounded-5" alt="...">
+                            <div class="position-absolute content-m-center-1">
+                            </div>
+                        </div>
+                        <div>
+                            <img src="https://imgur.com/CgFL6Bm.jpg" class="img-fluid rounded-5" alt="...">
+                            <div class="position-absolute content-m-center-2">
+                            </div>
+                        </div>
+                        <div>
+                            <img src="https://imgur.com/Dei24Sn.jpg" class="img-fluid rounded-5" alt="...">
+                            <div class="position-absolute content-m-center-3">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div>
+                            <img src="https://imgur.com/CBKxK7s.jpg" class="img-fluid rounded-5" alt="">
+                            <div class="position-absolute content-m-center-1">
+                            </div>
+                        </div>
+                        <div>
+                            <img src="https://imgur.com/LGzZfg2.jpg" class="img-fluid rounded-5" alt="...">
+                            <div class="position-absolute content-m-center-2">
+                            </div>
+                        </div>
+                        <div>
+                            <img src="https://imgur.com/e1qZ2EX.jpg" class="img-fluid rounded-5" alt="...">
+                            <div class="position-absolute content-m-center-3">
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade1" data-bs-slide="prev">
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
                     <span class="carousel-control-prev-icon btn-primary rounded-pill" aria-hidden="true"></span>
                     <span class="visually-hidden">Previous</span>
                 </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade1" data-bs-slide="next">
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
                     <span class="carousel-control-next-icon btn-primary rounded-pill" aria-hidden="true"></span>
                     <span class="visually-hidden">Next</span>
                 </button>
@@ -92,37 +135,74 @@
     </div>
 </section>
 
+
 <!-- Experience with TripTailor Carousel -->
 <section class="carousel mt-5 text-black-50">
     <div class="container">
         <div class="row text-center">
             <div class="mb-5">
-                <h3 class="text-color">Experience with TripTailor</h3>
-                <h4 style="font-size: 18px;">Explore the best and new location in your area</h4>
+                <h3 class="brand-text">Experience with  TripTailor</h3>
+                <h4 style="font-size: 18px;">Explore the best and new location in  your area</h4>
             </div>
-            <div class="mb-5">
-                <button class="btn btn-primary rounded" type="button">All</button>
-                <button class="btn btn-primary-outline rounded" type="button">Most popular</button>
-                <button class="btn btn-primary-outline rounded" type="button">Trending</button>
-                <button class="btn btn-primary-outline rounded" type="button">New location</button>
-            </div>
-            <div id="carouselExampleFade2" class="carousel slide carousel-fade">
+            <div id="carouselExampleFade" class="carousel slide carousel-fade col-sm-12">
                 <div class="carousel-inner">
-                    {% for image in carousel2_images %}
-                        <div class="carousel-item {% if forloop.first %}active{% endif %}">
-                            <img src="{% static image %}" height="550" class="d-block rounded-5" alt="{{ image|slice:'0:-4' }}">
-                            <div class="position-absolute content-m-{{ forloop.counter }}">
-                                <p>{{ image|slice:'0:-4'|title }}</p>
-                                <button class="btn btn-primary rounded-pill" type="button">Book Now</button>
+                    <div class="carousel-item active">
+                        <div class="col-md-12">
+                            <img src="https://imgur.com/7H3ACir.jpg" class="img-fluid rounded-5" alt="...">
+                            <div class="position-absolute content-m-center-1">
                             </div>
                         </div>
-                    {% endfor %}
+                        <div class="col-md-12">
+                            <img src="https://imgur.com/xJPb97x.jpg" class="img-fluid rounded-5" alt="...">
+                            <div class="position-absolute content-m-center-2">
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <img src="https://imgur.com/rvAjc9t.jpg" class="img-fluid rounded-5" alt="...">
+                            <div class="position-absolute content-m-center-3">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div>
+                            <img src="https://imgur.com/IpTmuzH.jpg" class="img-fluid rounded-5" alt="...">
+                            <div class="position-absolute content-m-center-1">
+                            </div>
+                        </div>
+                        <div>
+                            <img src="https://imgur.com/CgFL6Bm.jpg" class="img-fluid rounded-5" alt="...">
+                            <div class="position-absolute content-m-center-2">
+                            </div>
+                        </div>
+                        <div>
+                            <img src="https://imgur.com/Dei24Sn.jpg" class="img-fluid rounded-5" alt="...">
+                            <div class="position-absolute content-m-center-3">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div>
+                            <img src="https://imgur.com/CBKxK7s.jpg" class="img-fluid rounded-5" alt="">
+                            <div class="position-absolute content-m-center-1">
+                            </div>
+                        </div>
+                        <div>
+                            <img src="https://imgur.com/LGzZfg2.jpg" class="img-fluid rounded-5" alt="...">
+                            <div class="position-absolute content-m-center-2">
+                            </div>
+                        </div>
+                        <div>
+                            <img src="https://imgur.com/e1qZ2EX.jpg" class="img-fluid rounded-5" alt="...">
+                            <div class="position-absolute content-m-center-3">
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade2" data-bs-slide="prev">
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
                     <span class="carousel-control-prev-icon btn-primary rounded-pill" aria-hidden="true"></span>
                     <span class="visually-hidden">Previous</span>
                 </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade2" data-bs-slide="next">
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
                     <span class="carousel-control-next-icon btn-primary rounded-pill" aria-hidden="true"></span>
                     <span class="visually-hidden">Next</span>
                 </button>
@@ -136,26 +216,68 @@
     <div class="container">
         <div class="row text-center">
             <div class="mb-5">
-                <h3 class="text-color">Homes Guests Love</h3>
+                <h3 class="brand-text">Homes Guests Love</h3>
                 <h4 style="font-size: 18px;">Discover new homes for your travel and stays</h4>
             </div>
-            <div id="carouselExampleFade3" class="carousel slide carousel-fade">
+            <div id="carouselExampleFade" class="carousel slide carousel-fade col-sm-12">
                 <div class="carousel-inner">
-                    {% for image in carousel3_images %}
-                        <div class="carousel-item {% if forloop.first %}active{% endif %}">
-                            <img src="{% static image %}" height="550" class="d-block rounded-5" alt="{{ image|slice:'0:-4' }}">
-                            <div class="position-absolute content-m-{{ forloop.counter }}">
-                                <p>{{ image|slice:'0:-4'|title }}</p>
-                                <button class="btn btn-primary rounded-pill" type="button">Book Now</button>
+                    <div class="carousel-item active">
+                        <div class="col-md-12">
+                            <img src="https://imgur.com/PizGjW7.jpg" class="img-fluid rounded-5" alt="...">
+                            <div class="position-absolute content-m-center-1">
                             </div>
                         </div>
-                    {% endfor %}
+                        <div class="col-md-12">
+                            <img src="https://imgur.com/1jmDey9.jpg" class="img-fluid rounded-5" alt="...">
+                            <div class="position-absolute content-m-center-2">
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <img src="https://imgur.com/nqK3Wfd.jpg" class="img-fluid rounded-5" alt="...">
+                            <div class="position-absolute content-m-center-3">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div>
+                            <img src="https://imgur.com/IpTmuzH.jpg" class="img-fluid rounded-5" alt="...">
+                            <div class="position-absolute content-m-center-1">
+                            </div>
+                        </div>
+                        <div>
+                            <img src="https://imgur.com/CgFL6Bm.jpg" class="img-fluid rounded-5" alt="...">
+                            <div class="position-absolute content-m-center-2">
+                            </div>
+                        </div>
+                        <div>
+                            <img src="https://imgur.com/Dei24Sn.jpg" class="img-fluid rounded-5" alt="...">
+                            <div class="position-absolute content-m-center-3">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div>
+                            <img src="https://imgur.com/CBKxK7s.jpg" class="img-fluid rounded-5" alt="">
+                            <div class="position-absolute content-m-center-1">
+                            </div>
+                        </div>
+                        <div>
+                            <img src="https://imgur.com/LGzZfg2.jpg" class="img-fluid rounded-5" alt="...">
+                            <div class="position-absolute content-m-center-2">
+                            </div>
+                        </div>
+                        <div>
+                            <img src="https://imgur.com/e1qZ2EX.jpg" class="img-fluid rounded-5" alt="...">
+                            <div class="position-absolute content-m-center-3">
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade3" data-bs-slide="prev">
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
                     <span class="carousel-control-prev-icon btn-primary rounded-pill" aria-hidden="true"></span>
                     <span class="visually-hidden">Previous</span>
                 </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade3" data-bs-slide="next">
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
                     <span class="carousel-control-next-icon btn-primary rounded-pill" aria-hidden="true"></span>
                     <span class="visually-hidden">Next</span>
                 </button>
