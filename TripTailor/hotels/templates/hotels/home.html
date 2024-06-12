@@ -335,7 +335,7 @@
 <script type="text/javascript">
     $(document).ready(function() {
         $('#country').change(function() {
-            var countryId = $(this).val();
+            let countryId = $(this).val();
             if (countryId) {
                 $.ajax({
                     url: '/get_regions/' + countryId + '/',

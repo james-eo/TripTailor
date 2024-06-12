@@ -56,7 +56,7 @@
 }
 
 .footer p:hover {
-    color: red; /* Change to your desired hover color */
+    color: rgb(246, 233, 233);
 }
 
 .call-to-action .cta-link:hover {
@@ -114,10 +114,6 @@ body {
     background-color:#4583BD !important ;
     padding: 3px !important;
 }
-/* .hero-section{
-    padding: 3px  20px;
-    
-} */
 .whit-text{
     color:#ffffff !important ;
     font-size: 30px;
