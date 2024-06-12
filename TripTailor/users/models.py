@@ -2,6 +2,7 @@ from django.db import models
 from django.contrib.auth.models import User
 from PIL import Image
 
+
 class Profile(models.Model):
     """
     Represents a user profile, which extends the built-in User model
@@ -30,7 +31,7 @@ class Profile(models.Model):
         Override the save method to resize the profile image
         if it is larger than 300x300 pixels.
 
-        This method resizes profile image to a maximum of 
+        This method resizes profile image to a maximum of
         300x300 pixels to optimize storage and loading times.
 
         Args:

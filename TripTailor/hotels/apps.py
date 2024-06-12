@@ -1,5 +1,6 @@
 from django.apps import AppConfig
 
+
 class HotelsConfig(AppConfig):
     """
     Configuration for the Hotels application.

@@ -3,6 +3,7 @@ from django.contrib.auth.models import User
 from django.contrib.auth.forms import UserCreationForm
 from .models import Profile
 
+
 class UserRegisterForm(UserCreationForm):
     """
     A form for creating new users, including all the required fields,
@@ -24,6 +25,7 @@ class UserRegisterForm(UserCreationForm):
         model = User
         fields = ['username', 'email', 'password1', 'password2']
 
+
 class UserUpdateForm(forms.ModelForm):
     """
     A form for updating existing users,
@@ -44,6 +46,7 @@ class UserUpdateForm(forms.ModelForm):
         """
         model = User
         fields = ['username', 'email']
+
 
 class ProfileUpdateForm(forms.ModelForm):
     """

@@ -2,11 +2,12 @@ from django.shortcuts import render
 from django.http import JsonResponse
 from .models import Hotel, Country, City, Region
 
+
 def home(request):
     """
     Render the home page with a search form.
 
-    This view fetches all countries from the database and passes them to the 
+    This view fetches all countries from the database and passes them to the
     'hotels/home.html' template for rendering.
 
     Args:
@@ -20,6 +21,7 @@ def home(request):
         'countries': countries,
     }
     return render(request, 'hotels/home.html', context)
+
 
 def get_regions(request, country_id):
     """
@@ -39,6 +41,7 @@ def get_regions(request, country_id):
     regions_list = list(regions.values('id', 'name'))
     return JsonResponse(regions_list, safe=False)
 
+
 def get_cities(request, region_id):
     """
     Return cities for a given region as a JSON response.
@@ -57,12 +60,13 @@ def get_cities(request, region_id):
     cities_list = list(cities.values('id', 'name'))
     return JsonResponse(cities_list, safe=False)
 
+
 def accommodations(request):
     """
     Handle the display of hotels and search results.
 
-    This view fetches and filters hotels based on provided query parameters 
-    such as country, region, city, and budget. It then renders the 
+    This view fetches and filters hotels based on provided query parameters
+    such as country, region, city, and budget. It then renders the
     'hotels/accommodations.html' template with the filtered hotel list.
 
     Args:
@@ -94,13 +98,14 @@ def accommodations(request):
     if budget:
         min_price, max_price = map(int, budget.split(" - "))
         hotels = hotels.filter(price__gte=min_price, price__lte=max_price)
-    
+
     countries = Country.objects.all()
     context = {
         'hotel_list': hotels,
         'countries': countries,
     }
     return render(request, 'hotels/accommodations.html', context)
+
 
 def about(request):
     """

@@ -1,11 +1,12 @@
-from django.shortcuts import render, redirect
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth import logout
+from django.shortcuts import render, redirect
 from .forms import (UserRegisterForm,
                     UserUpdateForm,
                     ProfileUpdateForm
                     )
+
 
 def register(request):
     """
@@ -38,11 +39,12 @@ def register(request):
         form = UserRegisterForm()
     return render(request, 'users/register.html', {'form': form})
 
+
 def logout_view(request):
     """
     Handle user logout.
 
-    This view logs out the user and then renders the logout page. 
+    This view logs out the user and then renders the logout page.
 
     Args:
         request: The HTTP request object.
@@ -53,6 +55,7 @@ def logout_view(request):
     logout(request)
     return render(request, 'users/logout.html')
 
+
 @login_required
 def profile(request):
     """
@@ -62,7 +65,7 @@ def profile(request):
     If the request method is POST,
     it processes the submitted profile update form.
     If the forms are valid, it saves the changes,
-    displays a success message, and redirects to the profile page. 
+    displays a success message, and redirects to the profile page.
     If the request method is GET, it displays the profile update forms
     with the current user information.
 
@@ -87,7 +90,7 @@ def profile(request):
     else:
         u_form = UserUpdateForm(instance=request.user)
         p_form = ProfileUpdateForm(instance=request.user.profile)
-    
+
     context = {
         'u_form': u_form,
         'p_form': p_form

@@ -1,6 +1,7 @@
 from django.db import models
 from django.contrib.auth.models import User
 
+
 class Country(models.Model):
     """
     Represents a country.
@@ -18,6 +19,7 @@ class Country(models.Model):
             str: The name of the country.
         """
         return self.name
+
 
 class Region(models.Model):
     """
@@ -39,6 +41,7 @@ class Region(models.Model):
         """
         return self.name
 
+
 class City(models.Model):
     """
     Represents a city within a region.
@@ -58,6 +61,7 @@ class City(models.Model):
             str: The name of the city.
         """
         return self.name
+
 
 class Hotel(models.Model):
     """
@@ -108,6 +112,7 @@ class Hotel(models.Model):
             str: The name of the hotel.
         """
         return self.name
+
 
 class HotelImage(models.Model):
     """
