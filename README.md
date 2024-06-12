@@ -13,7 +13,7 @@
 **Team:**
 **Moses Eze** - Front-End Engineer
 **James Okonkwo** - Project Lead/Full-Stack Engineer
-**Stephen Odiase** - Backend Engineer
+**Stephen Odiase** - Front-End Engineer
 
 #### Roles:
 Front-End Engineer: Designs the user interface(UI) and user experience(UX), ensuring an intuitive and visually appealing app. Implements the user interface/experience (UI/UX) for a seamless and user-friendly experience. 
