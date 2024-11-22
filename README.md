@@ -10,36 +10,36 @@
 
 ## 2. Team Members
 
-**Team:**
-**Moses Eze** - Front-End Engineer
-**James Okonkwo** - Project Lead/Full-Stack Engineer
-**Stephen Odiase** - Front-End Engineer
+**Team:**  
+**Moses Eze** - Front-End Engineer  
+**James Okonkwo** - Project Lead/Full-Stack Engineer  
+**Stephen Odiase** - Back-End Engineer
 
 #### Roles:
-Front-End Engineer: Designs the user interface(UI) and user experience(UX), ensuring an intuitive and visually appealing app. Implements the user interface/experience (UI/UX) for a seamless and user-friendly experience. 
-Project Lead & Data Scientist: Responsible for overall project vision, managing the development process. Oversees project management, coordinates team efforts, and ensures project milestones are met. Analyzes user data and travel trends to personalize hotel recommendations using machine learning techniques.
-Backend Engineer: Responsible for building the backend infrastructure using APIs and databases. Implements backend functionalities, database management, and server-side logic.
+- **Front-End Engineer:** Designs the user interface(UI) and user experience(UX), ensuring an intuitive and visually appealing app. Implements the user interface/experience (UI/UX) for a seamless and user-friendly experience.  
+- **Full Stack Engineer:** Responsible for overall project vision, managing the development process. Oversees project management, coordinates team efforts, and ensures project milestones are met. Analyzes user data and travel trends to personalize hotel recommendations using machine learning techniques.
+- **Backend Engineer:** Responsible for building the backend infrastructure using APIs and databases. Implements backend functionalities, database management, and server-side logic.
 
 #### Reasoning
 These roles have been decided based on the strengths and expertise of each team member. 
 
-Moses' background in UI/UX design ensures a seamless user experience.
-James’ experience in project management and data science makes him suitable for overseeing the project and managing the data needed for this project
-Stephen is proficient in backend development which makes him the ideal candidate for implementing server-side functionalities.
+*Moses' background in UI/UX design* ensures a seamless user experience.  
+*James’ experience in Full Stack Engineering* makes him suitable for overseeing the project and managing the data needed for this project  
+*Stephen is proficient in backend development* which makes him the ideal candidate for implementing server-side functionalities.
 
 ## 3. Technologies
-Programming Languages: Python (backend), HTML5, CSS3, Javascript (frontend)
-Frameworks: Flask/Django(backend), Express.js, React.js (frontend)
-Databases: MySQL, MongoDB
-APIs: Hotel booking APIs (e.g., Booking.com, Expedia), Travel data APIs (e.g., Google Places, Skyscanner) (Optional for data science integration)
-Cloud Platform: Heroku (for deployment)
-Version Control: Git (with Github)
-Project Management Tools: Asana or Trello
+Programming Languages: Python (backend), HTML5, CSS3, Javascript (frontend)  
+Frameworks: Flask/Django(backend), Express.js, React.js (frontend)  
+Databases: MySQL, MongoDB  
+APIs: Hotel booking APIs (e.g., Booking.com, Expedia), Travel data APIs (e.g., Google Places, Skyscanner) (Optional for data science integration)  
+Cloud Platform: Heroku (for deployment)   
+Version Control: Git (with Github)  
+Project Management Tools: Asana or Trello  
 
 #### Technology Trade-offs:
 
-Backend: We chose Flask due to its lightweight nature and better suitability for smaller-scale projects like this one. Django offers more features but would require additional development time for our project scope.
-Frontend: We opted for React.js over vanilla Javascript for its component-based architecture, which promotes code reusability and maintainability for a complex UI.
+- **Backend:** We chose Flask due to its lightweight nature and better suitability for smaller-scale projects like this one. Django offers more features but would require additional development time for our project scope.  
+- **Frontend:** We opted for React.js over vanilla Javascript for its component-based architecture, which promotes code reusability and maintainability for a complex UI.
 
 ### 4 MVP Specification
 
