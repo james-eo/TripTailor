@@ -109,17 +109,17 @@ These APIs and methods facilitate communication between the web client, backend 
 **NOTE:** We will not utilize these third-party APIs in the MVP to focus on core functionalities.
 
 ### 6 User Stories
-As a frequent traveler, I want to be able to customize my hotel preferences based on factors such as location, price range, amenities, and user ratings so that I can find accommodations that suit my specific needs and preferences for each trip.
-As a budget-conscious tourist, I want to receive recommendations for affordable yet quality hotels in my desired location, ensuring that I can find suitable accommodations within my budget without compromising on comfort and convenience.
-As a business traveler, I want the ability to quickly access detailed information about hotels, including their location, amenities, and user ratings, to make informed decisions and efficiently book accommodations for my business trips.
-As a user planning a vacation, I want to view personalized hotel recommendations based on my travel preferences, such as preferred amenities and desired location, allowing me to explore various options and select the perfect stay for my upcoming trip.
-As a traveler seeking unique experiences, I want the option to discover boutique hotels and hidden gems in my chosen destination, providing me with the opportunity to explore distinctive accommodations that align with my preference for authentic and memorable stays.
+- As a frequent traveler, I want to be able to customize my hotel preferences based on factors such as location, price range, amenities, and user ratings so that I can find accommodations that suit my specific needs and preferences for each trip.
+- As a budget-conscious tourist, I want to receive recommendations for affordable yet quality hotels in my desired location, ensuring that I can find suitable accommodations within my budget without compromising on comfort and convenience.
+- As a business traveler, I want the ability to quickly access detailed information about hotels, including their location, amenities, and user ratings, to make informed decisions and efficiently book accommodations for my business trips.
+- As a user planning a vacation, I want to view personalized hotel recommendations based on my travel preferences, such as preferred amenities and desired location, allowing me to explore various options and select the perfect stay for my upcoming trip.
+- As a traveler seeking unique experiences, I want the option to discover boutique hotels and hidden gems in my chosen destination, providing me with the opportunity to explore distinctive accommodations that align with my preference for authentic and memorable stays.
 
 
 ### 7 Data Modeling
 
 ##### Data Model
-Link to Data Model Diagram
+
 
 ### 8. Challenge Statement
 Challenge
